@@ -1,4 +1,4 @@
-package pattern.creational.factoryMethod;
+package pattern.creational.factory_method;
 
 import java.util.function.Supplier;
 
@@ -9,9 +9,9 @@ public enum TypeVoiture {
 	
 	//L'enum prend en argument un Supplier de type Voiture.
 	private final Supplier<Voiture> constructor;
-	
+
 	//constructeur
-	private TypeVoiture(Supplier<Voiture> constructor) {
+	TypeVoiture(Supplier<Voiture> constructor) {
 		this.constructor = constructor;
 	}
 
